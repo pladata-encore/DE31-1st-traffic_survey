@@ -1,0 +1,106 @@
+(base) root@bruhhh:~# 
+(base) root@bruhhh:~# 
+(base) root@bruhhh:~# 
+(base) root@bruhhh:~# cd ~/.cache/
+(base) root@bruhhh:~/.cache# ll
+total 28
+drwxrwxrwx  7 root root 4096 Apr 17 00:05 ./
+drwx------ 27 root root 4096 Apr 16 05:32 ../
+drwxr-xr-x  3 root root 4096 Apr 15 15:27 jedi/
+drwxr-xr-x  2 root root 4096 Apr 17 00:05 matplotlib/
+drwxr-xr-x  6 root root 4096 Apr 15 13:44 pip/
+drwxr-xr-x  3 root root 4096 Apr 16 05:14 selenium/
+drwxrwxrwx  3 root root 4096 Apr 23  2021 vscode-cpptools/
+
+
+(base) root@bruhhh:~/.cache# rm -rf matplotlib/
+
+
+(base) root@bruhhh:~/.cache# apt-get install fonts-nanum*
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Note, selecting 'fonts-nanum-eco' for glob 'fonts-nanum*'
+Note, selecting 'fonts-nanum' for glob 'fonts-nanum*'
+Note, selecting 'fonts-nanum-gothic-light' for glob 'fonts-nanum*'
+Note, selecting 'fonts-nanum-coding' for glob 'fonts-nanum*'
+Note, selecting 'fonts-nanum-extra' for glob 'fonts-nanum*'
+The following NEW packages will be installed:
+  fonts-nanum fonts-nanum-coding fonts-nanum-eco fonts-nanum-extra
+0 upgraded, 4 newly installed, 0 to remove and 0 not upgraded.
+Need to get 37.6 MB of archives.
+After this operation, 145 MB of additional disk space will be used.
+Get:1 http://mirror.kakao.com/ubuntu focal/universe amd64 fonts-nanum-extra all 20180306-3 [12.2 MB]
+Get:2 http://mirror.kakao.com/ubuntu focal/universe amd64 fonts-nanum all 20180306-3 [9599 kB]
+Get:3 http://mirror.kakao.com/ubuntu focal/universe amd64 fonts-nanum-coding all 2.5-2 [1084 kB]
+Get:4 http://mirror.kakao.com/ubuntu focal/universe amd64 fonts-nanum-eco all 1.000-7 [14.7 MB]
+Fetched 37.6 MB in 1s (28.3 MB/s)        
+Selecting previously unselected package fonts-nanum-extra.
+(Reading database ... 52997 files and directories currently installed.)
+Preparing to unpack .../fonts-nanum-extra_20180306-3_all.deb ...
+Unpacking fonts-nanum-extra (20180306-3) ...
+Selecting previously unselected package fonts-nanum.
+Preparing to unpack .../fonts-nanum_20180306-3_all.deb ...
+Unpacking fonts-nanum (20180306-3) ...
+Selecting previously unselected package fonts-nanum-coding.
+Preparing to unpack .../fonts-nanum-coding_2.5-2_all.deb ...
+Unpacking fonts-nanum-coding (2.5-2) ...
+Selecting previously unselected package fonts-nanum-eco.
+Preparing to unpack .../fonts-nanum-eco_1.000-7_all.deb ...
+Unpacking fonts-nanum-eco (1.000-7) ...
+Setting up fonts-nanum-extra (20180306-3) ...
+Setting up fonts-nanum (20180306-3) ...
+Setting up fonts-nanum-coding (2.5-2) ...
+Setting up fonts-nanum-eco (1.000-7) ...
+Processing triggers for fontconfig (2.13.1-2ubuntu3) ...
+(base) root@bruhhh:~/.cache# apt update
+Hit:1 http://mirror.kakao.com/ubuntu focal InRelease   
+Hit:3 http://mirror.kakao.com/ubuntu focal-backports InRelease
+Get:2 http://mirror.kakao.com/ubuntu focal-updates InRelease [114 kB]
+Get:4 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]               
+Reading package lists... Done      
+E: Release file for http://ftp.daumkakao.com/ubuntu/dists/focal-updates/InRelease is not valid yet (invalid for another 2d 1h 39min 9s). Updates for this repository will not be applied.
+E: Release file for http://security.ubuntu.com/ubuntu/dists/focal-security/InRelease is not valid yet (invalid for another 1d 22h 5min 33s). Updates for this repository will not be applied.
+
+
+
+(base) root@bruhhh:~/.cache# apt-get install fonts-nanum*
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Note, selecting 'fonts-nanum-eco' for glob 'fonts-nanum*'
+Note, selecting 'fonts-nanum' for glob 'fonts-nanum*'
+Note, selecting 'fonts-nanum-gothic-light' for glob 'fonts-nanum*'
+Note, selecting 'fonts-nanum-coding' for glob 'fonts-nanum*'
+Note, selecting 'fonts-nanum-extra' for glob 'fonts-nanum*'
+fonts-nanum is already the newest version (20180306-3).
+fonts-nanum-coding is already the newest version (2.5-2).
+fonts-nanum-eco is already the newest version (1.000-7).
+fonts-nanum-extra is already the newest version (20180306-3).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+
+
+(base) root@bruhhh:~/.cache# fc-cache -fv
+/usr/share/fonts: caching, new cache contents: 0 fonts, 1 dirs
+/usr/share/fonts/truetype: caching, new cache contents: 0 fonts, 3 dirs
+/usr/share/fonts/truetype/dejavu: caching, new cache contents: 6 fonts, 0 dirs
+/usr/share/fonts/truetype/liberation: caching, new cache contents: 16 fonts, 0 dirs
+/usr/share/fonts/truetype/nanum: caching, new cache contents: 31 fonts, 0 dirs
+/usr/local/share/fonts: caching, new cache contents: 0 fonts, 0 dirs
+/root/.local/share/fonts: skipping, no such directory
+/root/.fonts: skipping, no such directory
+/usr/share/fonts/truetype: skipping, looped directory detected
+/usr/share/fonts/truetype/dejavu: skipping, looped directory detected
+/usr/share/fonts/truetype/liberation: skipping, looped directory detected
+/usr/share/fonts/truetype/nanum: skipping, looped directory detected
+/var/cache/fontconfig: cleaning cache directory
+/root/.cache/fontconfig: not cleaning non-existent cache directory
+/root/.fontconfig: not cleaning non-existent cache directory
+fc-cache: succeeded
+
+
+(base) root@bruhhh:~/.cache# rm -rf matplotlib/
+
+
+
